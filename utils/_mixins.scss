@@ -1,0 +1,33 @@
+@mixin cards-map($cards-map) {
+  @each $number, $value in $cards-map {
+    &--#{$number} {
+      background: map-get($value, background);
+      color: map-get($value, color);
+      font-family: map-get($value, font-family);
+    }
+  }
+}
+
+@mixin subtitle-map($cards-map) {
+  @each $number, $value in $cards-map {
+    @if (map-has-key($value, subtitle-color-1)) {
+      &--#{$number} {
+        background: -webkit-linear-gradient(
+          0deg,
+          map-get($value, subtitle-color-1),
+          map-get($value, subtitle-color-2)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+@mixin menu-title($card-maps) {
+  @each $number, $value in $cards-map {
+    &--#{$number} {
+      font-family: map-get($value, font-family);
+    }
+  }
+}

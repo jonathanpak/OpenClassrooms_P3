@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #569c87;
+  height: 100px;
+}
+
+header .logo {
+  max-height: 80%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+footer {
+  background-color: #569c87;
+  color: #fcca46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  width: 100%;
+}
+
+.menu-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.menu-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 35%;
+  margin: 10px 0;
+  padding: 10px;
+  height: 350px;
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-card {
+    width: 100%;
+  }
+}
+
+.menu-card__subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.menu-card__subtitle--second {
+  background: -webkit-linear-gradient(0deg, #c77412, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-card__subtitle--third {
+  background: -webkit-linear-gradient(0deg, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-card__subtitle--fourth {
+  background: -webkit-linear-gradient(0deg, #56a847, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-card__title {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+.menu-card--first {
+  background: #fcdfdb;
+  color: #3c1218;
+  font-family: Georgia;
+}
+
+.menu-card--second {
+  background: #fff5fe;
+  color: #c77412;
+  font-family: Georgia;
+}
+
+.menu-card--third {
+  background: #f9f9f9;
+  color: #0887fb;
+  font-family: Georgia;
+}
+
+.menu-card--fourth {
+  background: #fdfffd;
+  color: #72bf56;
+  font-family: Georgia;
+}
+
+a.menu-card {
+  text-align: center;
+}
+
+.next {
+  background-color: #569c87;
+  color: #fcca46;
+  padding: 8px 35px;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.menu__title--first {
+  font-family: Georgia;
+}
+
+.menu__title--second {
+  font-family: Georgia;
+}
+
+.menu__title--third {
+  font-family: Georgia;
+}
+
+.menu__title--fourth {
+  font-family: Georgia;
+}
+/*# sourceMappingURL=style.css.map */
