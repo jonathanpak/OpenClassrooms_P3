@@ -28,6 +28,13 @@
   @each $number, $value in $cards-map {
     &--#{$number} {
       font-family: map-get($value, font-family);
+      color: map-get($value, color);
     }
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 800px) {
+    @content;
   }
 }

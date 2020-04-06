@@ -19,21 +19,28 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 30px 100px 30px;
 }
 
 footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   background-color: $color-primary;
   color: $color-secondary;
   display: flex;
   justify-content: space-between;
   height: 50px;
   align-items: center;
-  padding: 0 15px;
+  box-sizing: border-box;
+  padding: 0 20px;
   a {
     &:hover {
-      font-weight: bold;
+      animation: wiggle 120ms 2 ease-in-out;
     }
+  }
+  @include desktop {
+    justify-content: space-around;
   }
 }
 

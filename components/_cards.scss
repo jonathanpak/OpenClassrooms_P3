@@ -33,6 +33,12 @@
     font-size: 1.5rem;
   }
   @include cards-map($cards-map);
+  &:hover {
+    animation: fade 300ms forwards;
+    & > .menu-card__content {
+      animation: zoom 400ms ease-in-out forwards;
+    }
+  }
 }
 
 a.menu-card {

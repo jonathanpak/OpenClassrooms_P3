@@ -1,4 +1,6 @@
 .next {
+  display: flex;
+  align-items: baseline;
   background-color: $color-primary;
   color: $color-secondary;
   padding: 8px 35px;
@@ -6,4 +8,23 @@
   font-weight: 400;
   font-size: 1.2rem;
   margin-top: 30px;
+}
+
+.load {
+  width: $dot-size * 8;
+  height: $dot-size;
+  display: flex;
+  justify-content: space-evenly;
+  &__dot {
+    background-color: $color-secondary;
+    height: 100%;
+    width: $dot-size;
+    border-radius: 50%;
+    animation: dot $animation-duration infinite alternate-reverse both;
+    @for $i from 1 through 3 {
+      &--#{$i} {
+        animation-delay: $animation-duration/3 * $i;
+      }
+    }
+  }
 }

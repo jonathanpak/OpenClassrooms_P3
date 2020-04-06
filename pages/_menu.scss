@@ -2,4 +2,8 @@
   &__title {
     @include menu-title($cards-map);
   }
+  img {
+    max-width: 100%;
+    box-shadow: 1px 1px 5px grey;
+  }
 }

@@ -1,0 +1,36 @@
+$shake-intensity: 2%;
+@keyframes wiggle {
+  25% {
+    transform: translateX($shake-intensity);
+  }
+  75% {
+    transform: translateX($shake-intensity * -1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes dot {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
