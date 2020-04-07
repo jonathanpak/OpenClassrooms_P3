@@ -3,16 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css"
+    />
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img src="images/logo-ohmyfood.png" alt="Ohmyfood" class="logo" />
     </header>
-    <main class="menu">
-      <h1 class="menu__title menu__title--first">La note enchantée</h1>
-      <img src="images/menu-1.png" alt="Menu" />
+    <main>
+      <h1>La note enchantée</h1>
+      <div class="menu menu--first">
+        <i class="fas fa-music menu-card__gradient--first icon--top"></i>
+        <h2 class="menu__title menu__title--first">La note enchantée</h2>
+        <div class="menu__category">
+          <img src="images/divider-1.1.png" />
+          <h3 class="dish__category dish__category--first">
+            Prélude
+          </h3>
+          <div class="menu__items menu__items--fullwidth">
+            <div class="menu__line">
+              <p class="dish__item">
+                Ravioles de foie gras accompagnées de leur crème à la truffe
+              </p>
+              <p class="dish__price">98€</p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">
+                Caviar osciètre sur blini à la farine de blé noir
+              </p>
+              <p class="dish__price">115€</p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">
+                Homard et espuma de potiron mariné aux zests d'orange
+              </p>
+              <p class="dish__price">89€</p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">
+                Foie gras de canard cuit entier, confiture de figue et pain
+                toasté
+              </p>
+              <p class="dish__price">105€</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu__category">
+          <h3 class="dish__category dish__category--first">Point d'orgue</h3>
+          <div class="menu__items menu__items--fullwidth">
+            <div class="menu__line">
+              <p class="dish__item">
+                Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave
+              </p>
+              <p class="dish__price">102€</p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">
+                Langoustine poêlée, purée de patate douce
+              </p>
+              <p class="dish__price">205€</p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">
+                Mijoté de queue de bœuf et riz sauvage aux zests de citron
+              </p>
+              <p class="dish__price">169€</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu__category">
+          <h3 class="dish__category dish__category--first">Mouvement final</h3>
+          <div class="menu__items menu__items--fullwidth">
+            <div class="menu__line">
+              <p class="dish__item">
+                Macaron noisette et chocolat, glace au caramel brun et sel de
+                Guérande
+              </p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">
+                Baba au rhum revisité avec son coulis de citron
+              </p>
+            </div>
+            <div class="menu__line">
+              <p class="dish__item">Tarte au citron meringuée déstructurée</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu__signature">
+          <i
+            class="fas fa-music menu--icon-signature menu-card__gradient--first"
+          ></i>
+          <span class="menu__title menu__title--first">La note enchantée</span>
+        </div>
+      </div>
     </main>
     <footer>
       <a href="/mentions-legales.html">Mentions légales</a>

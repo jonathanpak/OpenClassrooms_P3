@@ -34,3 +34,12 @@ $shake-intensity: 2%;
     opacity: 0;
   }
 }
+
+@keyframes dash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

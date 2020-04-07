@@ -20,6 +20,9 @@ main {
   justify-content: center;
   align-items: center;
   padding: 30px 30px 100px 30px;
+  @include mobile {
+    padding: 10px 10px 100px 10px;
+  }
 }
 
 footer {

@@ -8,18 +8,28 @@
   }
 }
 
-@mixin subtitle-map($cards-map) {
+@mixin gradient-map($cards-map) {
   @each $number, $value in $cards-map {
-    @if (map-has-key($value, subtitle-color-1)) {
+    @if (map-has-key($value, gradient-color-1)) {
       &--#{$number} {
         background: -webkit-linear-gradient(
           0deg,
-          map-get($value, subtitle-color-1),
-          map-get($value, subtitle-color-2)
+          map-get($value, gradient-color-1),
+          map-get($value, gradient-color-2)
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+    }
+  }
+}
+
+@mixin menu($card-maps) {
+  @each $number, $value in $card-maps {
+    &--#{$number} {
+      background-color: map-get($value, background);
+      color: map-get($map: $value, $key: color);
+      font-family: map-get($map: $value, $key: font-family);
     }
   }
 }
@@ -29,12 +39,36 @@
     &--#{$number} {
       font-family: map-get($value, font-family);
       color: map-get($value, color);
+      font-size: map-get($value, font-size);
+    }
+  }
+}
+
+@mixin category-divider($divider-map) {
+  @each $number, $value in $divider-map {
+    &--#{$number} {
+      &:before,
+      &:after {
+        background-color: map-get($map: $value, $key: background-color);
+      }
+      &:before {
+        clip-path: map-get($map: $value, $key: clip-path-left);
+      }
+      &:after {
+        clip-path: map-get($map: $value, $key: clip-path-right);
+      }
     }
   }
 }
 
 @mixin desktop {
   @media screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }

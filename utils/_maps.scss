@@ -2,27 +2,79 @@ $cards-map: (
   first: (
     background: #fcdfdb,
     color: #3c1218,
-    font-family: Georgia
+    gradient-color-1: #f05060,
+    gradient-color-2: #f6916a,
+    font-family: "Pacifico",
+    font-size: 2rem,
   ),
   second: (
     background: #fff5fe,
     color: #c77412,
-    subtitle-color-1: #c77412,
-    subtitle-color-2: #905bfd,
-    font-family: Georgia
+    gradient-color-1: #c77412,
+    gradient-color-2: #905bfd,
+    font-family: Georgia,
   ),
   third: (
     background: #f9f9f9,
     color: #0887fb,
-    subtitle-color-1: #0431df,
-    subtitle-color-2: #0887fb,
-    font-family: Georgia
+    gradient-color-1: #0431df,
+    gradient-color-2: #0887fb,
+    font-family: Georgia,
   ),
   fourth: (
     background: #fdfffd,
     color: #72bf56,
-    subtitle-color-1: #56a847,
-    subtitle-color-2: #bfff7e,
-    font-family: Georgia
-  )
+    gradient-color-1: #56a847,
+    gradient-color-2: #bfff7e,
+    font-family: Georgia,
+  ),
+);
+
+$divider-map: (
+  first: (
+    background-color: #3c1218,
+    clip-path-left:
+      polygon(
+        1% 51%,
+        18% 51%,
+        58% 51%,
+        84% 51%,
+        99% 53%,
+        82% 53%,
+        48% 53%,
+        3% 52%
+      ),
+    clip-path-right:
+      polygon(
+        1% 51%,
+        18% 51%,
+        58% 51%,
+        84% 51%,
+        99% 53%,
+        82% 53%,
+        48% 53%,
+        3% 52%
+      ),
+  ),
+  second: (
+    background-color: black,
+    clip-path-left:
+      polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%),
+    clip-path-right:
+      polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%),
+  ),
+  third: (
+    background-color: black,
+    clip-path-left:
+      polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%),
+    clip-path-right:
+      polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%),
+  ),
+  fourth: (
+    background-color: black,
+    clip-path-left:
+      polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%),
+    clip-path-right:
+      polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%),
+  ),
 );

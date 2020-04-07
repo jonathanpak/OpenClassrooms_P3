@@ -23,10 +23,10 @@
   @media screen and (max-width: 600px) {
     width: 100%;
   }
-  &__subtitle {
+  &__gradient {
     font-size: 1.2rem;
     text-align: center;
-    @include subtitle-map($cards-map);
+    @include gradient-map($cards-map);
   }
   &__title {
     margin-top: 8px;
