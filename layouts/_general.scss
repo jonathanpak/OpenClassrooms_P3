@@ -11,6 +11,9 @@ header {
   height: 100px;
   .logo {
     max-height: 80%;
+    @include mobile {
+      max-height: 60%;
+    }
   }
 }
 
@@ -21,7 +24,7 @@ main {
   align-items: center;
   padding: 30px 30px 100px 30px;
   @include mobile {
-    padding: 10px 10px 100px 10px;
+    padding: 10px 5px 100px 5px;
   }
 }
 

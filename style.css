@@ -21,6 +21,12 @@ header .logo {
   max-height: 80%;
 }
 
+@media screen and (max-width: 600px) {
+  header .logo {
+    max-height: 60%;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +46,7 @@ main {
 
 @media screen and (max-width: 600px) {
   main {
-    padding: 10px 10px 100px 10px;
+    padding: 10px 5px 100px 5px;
   }
 }
 
@@ -159,6 +165,7 @@ a {
 .menu-card__title {
   margin-top: 8px;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .menu-card--first {
@@ -170,19 +177,19 @@ a {
 .menu-card--second {
   background: #fff5fe;
   color: #c77412;
-  font-family: Georgia;
+  font-family: "Croissant One";
 }
 
 .menu-card--third {
   background: #f9f9f9;
-  color: #0887fb;
-  font-family: Georgia;
+  color: black;
+  font-family: "Dancing Script";
 }
 
 .menu-card--fourth {
   background: #fdfffd;
-  color: #72bf56;
-  font-family: Georgia;
+  color: black;
+  font-family: "Kaushan Script";
 }
 
 .menu-card:hover {
@@ -197,6 +204,14 @@ a {
 
 a.menu-card {
   text-align: center;
+}
+
+.menu-card__title--third--card {
+  color: #0887fb;
+}
+
+.menu-card__title--fourth--card {
+  color: #72bf56;
 }
 
 .next {
@@ -286,40 +301,39 @@ a.menu-card {
 .menu--second {
   background-color: #fff5fe;
   color: #c77412;
-  font-family: Georgia;
+  font-family: "Croissant One";
 }
 
 .menu--third {
   background-color: #f9f9f9;
-  color: #0887fb;
-  font-family: Georgia;
+  color: black;
+  font-family: "Dancing Script";
 }
 
 .menu--fourth {
   background-color: #fdfffd;
-  color: #72bf56;
-  font-family: Georgia;
+  color: black;
+  font-family: "Kaushan Script";
 }
 
 .menu__title--first {
   font-family: "Pacifico";
   color: #3c1218;
-  font-size: 2rem;
 }
 
 .menu__title--second {
-  font-family: Georgia;
+  font-family: "Croissant One";
   color: #c77412;
 }
 
 .menu__title--third {
-  font-family: Georgia;
-  color: #0887fb;
+  font-family: "Dancing Script";
+  color: black;
 }
 
 .menu__title--fourth {
-  font-family: Georgia;
-  color: #72bf56;
+  font-family: "Kaushan Script";
+  color: black;
 }
 
 .menu__category {
@@ -335,6 +349,14 @@ a.menu-card {
           flex-direction: column;
   width: 90%;
   margin: auto;
+}
+
+.menu__category--second-color-2 {
+  color: #6e4ccc;
+}
+
+.menu__category--second-color-3 {
+  color: #905bfd;
 }
 
 .menu__items {
@@ -388,89 +410,95 @@ a.menu-card {
   font-size: 3rem;
 }
 
-.dish__category {
+.category__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 
-.dish__category:before, .dish__category:after {
-  content: "";
-  height: 30px;
+@media screen and (max-width: 600px) {
+  .category__title {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.category__title img {
+  max-height: 5px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
-.dish__category:before {
-  margin-right: 15px;
+.underline {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: center;
 }
 
-.dish__category:after {
-  margin-left: 15px;
-}
-
-.dish__category--first:before, .dish__category--first:after {
+.underline--first::after {
   background-color: #3c1218;
 }
 
-.dish__category--first:before {
-  -webkit-clip-path: polygon(1% 51%, 18% 51%, 58% 51%, 84% 51%, 99% 53%, 82% 53%, 48% 53%, 3% 52%);
-          clip-path: polygon(1% 51%, 18% 51%, 58% 51%, 84% 51%, 99% 53%, 82% 53%, 48% 53%, 3% 52%);
+.underline--second::after {
+  background-color: #c77412;
 }
 
-.dish__category--first:after {
-  -webkit-clip-path: polygon(1% 51%, 18% 51%, 58% 51%, 84% 51%, 99% 53%, 82% 53%, 48% 53%, 3% 52%);
-          clip-path: polygon(1% 51%, 18% 51%, 58% 51%, 84% 51%, 99% 53%, 82% 53%, 48% 53%, 3% 52%);
-}
-
-.dish__category--second:before, .dish__category--second:after {
+.underline--third::after {
   background-color: black;
 }
 
-.dish__category--second:before {
-  -webkit-clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-          clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-}
-
-.dish__category--second:after {
-  -webkit-clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-          clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-}
-
-.dish__category--third:before, .dish__category--third:after {
+.underline--fourth::after {
   background-color: black;
 }
 
-.dish__category--third:before {
-  -webkit-clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-          clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
+.underline::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
-.dish__category--third:after {
-  -webkit-clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-          clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
+.underline:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
-.dish__category--fourth:before, .dish__category--fourth:after {
-  background-color: black;
+.right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.dish__category--fourth:before {
-  -webkit-clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-          clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
+.underline--second--2::after {
+  background-color: #6e4ccc;
 }
 
-.dish__category--fourth:after {
-  -webkit-clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
-          clip-path: polygon(43% 38%, 34% 51%, 100% 51%, 100% 58%, 33% 59%, 41% 69%, 0% 50%);
+.underline--second--3::after {
+  background-color: #905bfd;
+}
+
+.underline--fourth--underline-color::after {
+  background-color: #72bf56;
 }
 
 @-webkit-keyframes wiggle {

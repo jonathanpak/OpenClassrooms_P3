@@ -31,6 +31,7 @@
   &__title {
     margin-top: 8px;
     font-size: 1.5rem;
+    text-transform: uppercase;
   }
   @include cards-map($cards-map);
   &:hover {
@@ -43,4 +44,17 @@
 
 a.menu-card {
   text-align: center;
+}
+
+.menu-card__title {
+  &--third {
+    &--card {
+      color: $third-color-2;
+    }
+  }
+  &--fourth {
+    &--card {
+      color: $fourth-color-2;
+    }
+  }
 }

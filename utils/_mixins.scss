@@ -24,8 +24,8 @@
   }
 }
 
-@mixin menu($card-maps) {
-  @each $number, $value in $card-maps {
+@mixin menu($cards-map) {
+  @each $number, $value in $cards-map {
     &--#{$number} {
       background-color: map-get($value, background);
       color: map-get($map: $value, $key: color);
@@ -39,23 +39,16 @@
     &--#{$number} {
       font-family: map-get($value, font-family);
       color: map-get($value, color);
-      font-size: map-get($value, font-size);
+      //  font-size: map-get($value, font-size);
     }
   }
 }
 
-@mixin category-divider($divider-map) {
-  @each $number, $value in $divider-map {
+@mixin underline($cards-map) {
+  @each $number, $value in $cards-map {
     &--#{$number} {
-      &:before,
-      &:after {
-        background-color: map-get($map: $value, $key: background-color);
-      }
-      &:before {
-        clip-path: map-get($map: $value, $key: clip-path-left);
-      }
-      &:after {
-        clip-path: map-get($map: $value, $key: clip-path-right);
+      &::after {
+        background-color: map-get($map: $value, $key: color);
       }
     }
   }

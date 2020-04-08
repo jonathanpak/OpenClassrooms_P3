@@ -21,6 +21,12 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
+    &--second-color-2 {
+      color: $second-color-4;
+    }
+    &--second-color-3 {
+      color: $second-color-3;
+    }
   }
   &__items {
     width: 80%;
@@ -55,22 +61,66 @@
   }
 }
 
-.dish__category {
+.category__title {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  &:before,
-  &:after {
+  @include mobile {
+    justify-content: space-around;
+  }
+  img {
+    max-height: 5px;
+    flex: 1 1 auto;
+  }
+}
+
+.underline {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  @include underline($cards-map);
+  &::after {
     content: "";
-    height: 30px;
-    flex-grow: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
   }
-  &:before {
-    margin-right: 15px;
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
   }
-  &:after {
-    margin-left: 15px;
+}
+
+.right {
+  transform: rotate(180deg);
+}
+
+.underline {
+  &--second {
+    &--2 {
+      &::after {
+        background-color: $second-color-4;
+      }
+    }
+    &--3 {
+      &::after {
+        background-color: $second-color-3;
+      }
+    }
   }
-  @include category-divider($divider-map);
+  &--fourth {
+    &--underline-color {
+      &::after {
+        background-color: $fourth-color-2;
+      }
+    }
+  }
 }
