@@ -17,12 +17,26 @@ header {
   height: 100px;
 }
 
-header .logo {
-  max-height: 80%;
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link .logo {
+  max-height: 100%;
 }
 
 @media screen and (max-width: 600px) {
-  header .logo {
+  .header__link .logo {
     max-height: 60%;
   }
 }
@@ -165,7 +179,24 @@ a {
 .menu-card__title {
   margin-top: 8px;
   font-size: 1.5rem;
+}
+
+.menu-card__title--first {
   text-transform: uppercase;
+  font-family: "Segoe Print", sans-serif;
+  font-weight: bold;
+}
+
+.menu-card__title--third--card {
+  color: #0887fb;
+}
+
+.menu-card__title--fourth--card {
+  color: #72bf56;
+}
+
+.menu-card__title--third, .menu-card__title--fourth {
+  font-family: "Segoe Print";
 }
 
 .menu-card--first {
@@ -186,10 +217,18 @@ a {
   font-family: "Dancing Script";
 }
 
+.menu-card--third .menu-card__subtitle {
+  font-size: 1.3rem;
+}
+
 .menu-card--fourth {
   background: #fdfffd;
   color: black;
   font-family: "Kaushan Script";
+}
+
+.menu-card--fourth .menu-card__subtitle {
+  font-size: 1.2rem;
 }
 
 .menu-card:hover {
@@ -204,14 +243,6 @@ a {
 
 a.menu-card {
   text-align: center;
-}
-
-.menu-card__title--third--card {
-  color: #0887fb;
-}
-
-.menu-card__title--fourth--card {
-  color: #72bf56;
 }
 
 .next {
@@ -295,25 +326,26 @@ a.menu-card {
 .menu--first {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: "Pacifico";
+  font-family: "Segoe Print";
+  font-weight: 400;
 }
 
 .menu--second {
   background-color: #fff5fe;
   color: #c77412;
-  font-family: "Croissant One";
+  font-family: "Garamond";
 }
 
 .menu--third {
   background-color: #f9f9f9;
   color: black;
-  font-family: "Dancing Script";
+  font-family: "Segoe Print";
 }
 
 .menu--fourth {
   background-color: #fdfffd;
   color: black;
-  font-family: "Kaushan Script";
+  font-family: "Segoe Print";
 }
 
 .menu__title--first {
@@ -404,6 +436,12 @@ a.menu-card {
 .menu--icon-signature {
   font-size: 2rem;
   margin-right: 5px;
+}
+
+.menu--third h3,
+.menu--fourth h3 {
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .icon--top {

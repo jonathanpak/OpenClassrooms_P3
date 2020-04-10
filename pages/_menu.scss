@@ -53,6 +53,11 @@
     font-size: 2rem;
     margin-right: 5px;
   }
+  &--third h3,
+  &--fourth h3 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
 }
 
 .icon {

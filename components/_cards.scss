@@ -31,8 +31,27 @@
   &__title {
     margin-top: 8px;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    &--first {
+      text-transform: uppercase;
+      font-family: "Segoe Print", sans-serif;
+      font-weight: bold;
+    }
+    &--third {
+      &--card {
+        color: $third-color-2;
+      }
+    }
+    &--fourth {
+      &--card {
+        color: $fourth-color-2;
+      }
+    }
+    &--third,
+    &--fourth {
+      font-family: "Segoe Print";
+    }
   }
+
   @include cards-map($cards-map);
   &:hover {
     animation: fade 300ms forwards;
@@ -44,17 +63,4 @@
 
 a.menu-card {
   text-align: center;
-}
-
-.menu-card__title {
-  &--third {
-    &--card {
-      color: $third-color-2;
-    }
-  }
-  &--fourth {
-    &--card {
-      color: $fourth-color-2;
-    }
-  }
 }

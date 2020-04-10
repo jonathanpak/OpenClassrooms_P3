@@ -5,7 +5,8 @@ $cards-map: (
     gradient-color-1: $first-color-3,
     gradient-color-2: $first-color-4,
     font-family: "Pacifico",
-    // font-size: 2rem,
+    font-secondary: "Segoe Print",
+    font-weight: 400,
   ),
   second: (
     background: $second-color-1,
@@ -13,6 +14,7 @@ $cards-map: (
     gradient-color-1: $second-color-2,
     gradient-color-2: $second-color-3,
     font-family: "Croissant One",
+    font-secondary: "Garamond",
   ),
   third: (
     background: $third-color-1,
@@ -20,6 +22,8 @@ $cards-map: (
     gradient-color-1: $third-color-3,
     gradient-color-2: $third-color-2,
     font-family: "Dancing Script",
+    font-secondary: "Segoe Print",
+    subtitle-size: 1.3rem,
   ),
   fourth: (
     background: $fourth-color-1,
@@ -27,5 +31,7 @@ $cards-map: (
     gradient-color-1: $fourth-color-3,
     gradient-color-2: $fourth-color-4,
     font-family: "Kaushan Script",
+    font-secondary: "Segoe Print",
+    subtitle-size: 1.2rem,
   ),
 );
