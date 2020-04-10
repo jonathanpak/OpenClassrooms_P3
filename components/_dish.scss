@@ -1,0 +1,7 @@
+.dish {
+  &__price {
+    @include mobile {
+      margin-left: 15px;
+    }
+  }
+}

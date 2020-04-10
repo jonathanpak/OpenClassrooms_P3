@@ -34,6 +34,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    @include mobile {
+      width: 90%;
+    }
     &--fullwidth {
       width: 100%;
     }
